@@ -1,0 +1,39 @@
+@layer components {
+  .line {
+    @apply h-px w-full bg-secondary-grey;
+  }
+
+  .outer-scale {
+    @apply relative w-full h-full p-4 rounded-full;
+    background: repeating-conic-gradient(
+      from 0deg,
+      var(--secondary-grey-light) 0deg 1deg,
+      transparent 1deg 4deg,
+      var(--secondary-grey-light) 4deg 5deg
+    );
+
+    &::before {
+      @apply content-[''] absolute inset-0;
+      background: conic-gradient(transparent 110deg, var(--primary-white) 110deg 250deg, transparent 250deg);
+    }
+
+    .outer-scale__number {
+      @apply absolute w-5 h-4 text-[10px] leading-4 text-primary-grey text-center overflow-hidden;
+    }
+  }
+
+  .inner-scale {
+    @apply relative w-full h-full p-[2px] rounded-full;
+    background: repeating-conic-gradient(
+      from 0deg,
+      var(--secondary-grey-light) 0deg 0.5deg,
+      transparent 0.5deg 4deg,
+      var(--secondary-grey-light) 4deg 4.5deg
+    );
+
+    &::before {
+      @apply content-[''] absolute inset-0;
+      background: conic-gradient(transparent 110deg, var(--primary-white) 110deg 250deg, transparent 250deg);
+    }
+  }
+}

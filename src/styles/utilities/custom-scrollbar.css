@@ -1,0 +1,19 @@
+@layer utilities {
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #d0d6e4 var(--primary-white);
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--primary-white);
+    }
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 8px;
+      background-color: var(--primary-white);
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background-color: #d0d6e4;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@layer components {
+  .header-1 {
+    @apply text-[32px] font-bold leading-none;
+  }
+  .header-2 {
+    @apply text-xl font-bold leading-6;
+  }
+  .body-1 {
+    @apply text-base text-primary-grey;
+  }
+  .button-text {
+    @apply text-sm font-medium leading-4;
+  }
+  .list-item-text {
+    @apply text-sm leading-4 text-primary-grey marker:w-4;
+  }
+}

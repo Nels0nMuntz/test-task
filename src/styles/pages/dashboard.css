@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "../base/fonts.css";
+@import "../base/vars.css";
+
+@import "tailwindcss/components";
+@import "../components/container.css";
+@import "../components/typography.css";
+@import "../components/card.css";
+@import "../components/charts.css";
+
+@import "tailwindcss/utilities";
+@import "../utilities/gradient.css";
+@import "../utilities/custom-scrollbar.css";
+
+@layer base {
+  body {
+    @apply min-h-full text-base font-normal text-primary-black bg-primary-blue-light;
+  }
+}

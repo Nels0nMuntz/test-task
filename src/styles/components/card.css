@@ -1,0 +1,11 @@
+@layer components {
+  .card {
+    @apply flex flex-col justify-between bg-primary-white rounded-2xl shadow-card overflow-hidden;
+  }
+  .card__head {
+    @apply flex gap-x-2 px-6 pt-6 pb-4;
+  }
+  .card__info {
+    @apply w-4 h-4 flex-shrink-0;
+  }
+}

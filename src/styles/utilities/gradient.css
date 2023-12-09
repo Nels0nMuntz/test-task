@@ -1,0 +1,9 @@
+@layer utilities {
+  .smile-chart-gradient {
+    @apply relative;
+    &::after {
+      @apply content-[''] absolute inset-0;
+      background: conic-gradient(transparent 110deg, var(--primary-white) 110deg 250deg, transparent 250deg);
+    }
+  }
+}
